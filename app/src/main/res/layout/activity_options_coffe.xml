@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".OptionsCoffe">
 
     <!-- Título de la aplicación -->
     <TextView
@@ -19,16 +19,17 @@
         android:layout_gravity="center_horizontal"
         android:padding="8dp" />
 
-    <!-- Imagen principal -->
+    <!-- Imagen principal (Taza de café) -->
+
+    <!-- Opción 1: Americano -->
     <ImageView
-        android:id="@+id/mainImage"
+        android:id="@+id/coffeeImage"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/pizzeria"
-        android:layout_marginBottom="16dp" />
+        android:src="@drawable/coffePortada" />
 
-    <!-- Opción 1 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,18 +41,18 @@
         <ImageView
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/sports_bar_24dp_E8EAED"
+            android:src="@drawable/coffee_24dp_E8EAED"
             android:layout_marginEnd="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¿Algo para tomar?"
+            android:text="Americano"
             android:textSize="18sp"
             android:layout_gravity="center_vertical" />
     </LinearLayout>
 
-    <!-- Opción 2 -->
+    <!-- Opción 2: Capuccino -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -63,18 +64,41 @@
         <ImageView
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/local_pizza_24dp_E8EAED"
+            android:src="@drawable/coffee_24dp_E8EAED"
             android:layout_marginEnd="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¿Algo para comer?"
+            android:text="Capuccino"
             android:textSize="18sp"
             android:layout_gravity="center_vertical" />
     </LinearLayout>
 
-    <!-- Opción 3 -->
+    <!-- Opción 3: Espresso -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/coffee_24dp_E8EAED"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espresso"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Opción 4: Mockachino -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -85,13 +109,13 @@
         <ImageView
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/storefront_24dp_E8EAED"
+            android:src="@drawable/coffee_24dp_E8EAED"
             android:layout_marginEnd="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¿Listo para ordenar?"
+            android:text="Mockachino"
             android:textSize="18sp"
             android:layout_gravity="center_vertical" />
     </LinearLayout>

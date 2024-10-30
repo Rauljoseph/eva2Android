@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"
+    android:id="@+id/main">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza Express App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Detalles del producto -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp">
+
+        <!-- Cantidad -->
+        <TextView
+            android:id="@+id/productQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="18sp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Separador "X" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textSize="18sp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Nombre del producto -->
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Americano"
+            android:textSize="18sp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Precio -->
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$1,290"
+            android:textSize="18sp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Botón de eliminar -->
+        <ImageView
+            android:id="@+id/removeProductButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/remove_icon"
+            android:layout_marginEnd="8dp" />
+    </LinearLayout>
+
+    <!-- Total -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/totalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textSize="18sp"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/totalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$1,290"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Botón de pagar -->
+    <Button
+        android:id="@+id/payButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAGAR" />
+</LinearLayout>
