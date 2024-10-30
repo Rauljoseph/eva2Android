@@ -10,7 +10,6 @@
     android:background="#FFFFFF"
     android:id="@+id/main">
 
-    <!-- Título -->
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -20,7 +19,6 @@
         android:textStyle="bold"
         android:layout_marginBottom="16dp" />
 
-    <!-- Detalles del producto -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +27,6 @@
         android:layout_marginBottom="8dp"
         android:padding="8dp">
 
-        <!-- Cantidad -->
         <TextView
             android:id="@+id/productQuantity"
             android:layout_width="wrap_content"
@@ -38,7 +35,6 @@
             android:textSize="18sp"
             android:layout_marginEnd="8dp" />
 
-        <!-- Separador "X" -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +42,6 @@
             android:textSize="18sp"
             android:layout_marginEnd="8dp" />
 
-        <!-- Nombre del producto -->
         <TextView
             android:id="@+id/productName"
             android:layout_width="wrap_content"
@@ -55,7 +50,6 @@
             android:textSize="18sp"
             android:layout_marginEnd="16dp" />
 
-        <!-- Precio -->
         <TextView
             android:id="@+id/productPrice"
             android:layout_width="wrap_content"
@@ -64,16 +58,14 @@
             android:textSize="18sp"
             android:layout_marginEnd="16dp" />
 
-        <!-- Botón de eliminar -->
         <ImageView
             android:id="@+id/removeProductButton"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:src="@drawable/remove_icon"
+            android:src="@drawable/remove_circle_outline_24dp_E8EAED"
             android:layout_marginEnd="8dp" />
     </LinearLayout>
 
-    <!-- Total -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -97,7 +89,6 @@
             android:textSize="18sp" />
     </LinearLayout>
 
-    <!-- Botón de pagar -->
     <Button
         android:id="@+id/payButton"
         android:layout_width="wrap_content"
